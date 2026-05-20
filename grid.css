@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+  
+}
+
+.container{
+    display:grid;
+    /* alla delar hamnar på rad */
+    grid-template-areas: 
+    "header"
+    "aside"
+    "main"
+    "footer"
+    ;
+    /* tar upp hela skärmen */
+    height:100vh;
+    /* hur mycket vertikal plats varje del ska ta (main tar 3fr) */
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+
+li{
+    padding:10px;
+}
+
+ p,h2,img,h1{
+        padding: 10px;
+    }
+
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside;
+    padding: 10px;
+}
+
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    grid-area: footer;
+}
+
+a{
+    color:black;   
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+.boive{
+    display:flex;
+    justify-content: center;
+    margin:0;
+}
+
+a:hover{
+    color:blue;
+}
+
+/* ändra hur hemsidan ser ut beroende på hur stor skärmen är */
+@media screen and (min-width: 600px) {
+    .container{
+        display:grid;
+        /* Vart alla delar ska sitta och i ordning */
+        grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+        /* Hur mycket horizontel plats main ska ta */
+        grid-template-columns: 1fr 2fr 2fr;
+        /* Hur mycket vertikal plats alla delar ska ta */
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    p,h2, img ,h1, ul{
+        padding: 10px;
+    }
+    p{
+        grid-area:p;
+        max-width: 1110px;
+    }
+
+    h2{
+        grid-area:h2;
+    }
+
+    img{
+        grid-area: img;
+        padding-top: 0%;
+
+    }
+
+    main{
+        max-width: 1110px;
+    }
+
+    ul{
+        padding-right: 0px;
+    }
+
+    aside{
+        display:flex;
+        justify-content: right;
+    }
+
+
+
+}

@@ -1,9 +1,10 @@
-### Well hello there!
+# Skapa en webbsida för något som intresserar dig
 
-This repository is meant to provide an example for *forking* a repository on GitHub.
+* Följ instruktioner som du fått från din lärare på annat sätt.
 
-Creating a *fork* is producing a personal copy of someone else's project. Forks act as a sort of bridge between the original repository and your personal copy. You can submit *Pull Requests* to help make other people's projects better by offering your changes up to the original project. Forking is at the core of social coding at GitHub.
+## Formkrav
 
-After forking this repository, you can make some changes to the project, and submit [a Pull Request](https://github.com/octocat/Spoon-Knife/pulls) as practice.
+* Committa ofta. Helst efter varje delmoment. Synka efter varje lektion.
+* Kopiera in dina milstolpar i milstolpar.md.
+* Anteckna för din egen skull i logg.md.
 
-For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:

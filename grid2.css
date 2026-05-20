@@ -1,0 +1,39 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+
+/* påverkar alla div i cards */
+.cards div {
+    /* 1 grow 1 shrink och max storlek */
+    flex: 1 1 250px;
+    margin: 10px;
+    /* göra färg runt bilden och texten */
+    padding: 10px;
+    background-color: aquamarine;
+    
+}
